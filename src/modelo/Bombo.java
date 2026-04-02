@@ -45,7 +45,7 @@ public class Bombo {
 		return bombo;
 	}
 	
-	public boolean verifcarEquipoenBombo(Equipo e) {
+	public boolean verifcarEquipoenBombo(Equipo e) {//no sabemos como funciona
 		if(bombo.contains(e)) {
 			return true;
 		}

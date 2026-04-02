@@ -24,6 +24,7 @@ public class Equipo {
  	public String toString() {
  		return nombre;
  	}
+     
 	
 
 }

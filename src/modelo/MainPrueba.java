@@ -13,7 +13,7 @@ public class MainPrueba {
 		s.mostrarSorteoBombo1();
 		
 		
-		s.mostrarSorteoBombo3();
+		//s.mostrarSorteoBombo3();
 
 	}
 

@@ -36,7 +36,7 @@ public class Sorteo {
 		for(Equipo e:estructuraRivales.keySet()) {
 			if(bombo3.verifcarEquipoenBombo(e)) {
 				System.out.println(e+"-> "+estructuraRivales.get(e));
-				System.out.println("---------------");
+				System.out.println("----------------");
 			}
 		}
 	}
@@ -45,7 +45,7 @@ public class Sorteo {
 		for(Equipo e:estructuraRivales.keySet()) {
 			if(bombo4.verifcarEquipoenBombo(e)) {
 				System.out.println(e+"-> "+estructuraRivales.get(e));
-				System.out.println("---------------");
+				System.out.println("----------------");
 			}
 		}
 	}
@@ -60,13 +60,28 @@ public class Sorteo {
 			
 			
 			estructuraRivales.get(e).add(equiposElegidosB1[0]);
+			estructuraRivales.get(equiposElegidosB1[0]).add(e);
+			
 			estructuraRivales.get(e).add(equiposElegidosB1[1]);
+			estructuraRivales.get(equiposElegidosB1[1]).add(e);
+			
 			estructuraRivales.get(e).add(equiposElegidosB2[0]);
+			estructuraRivales.get(equiposElegidosB2[0]).add(e);
+			
 			estructuraRivales.get(e).add(equiposElegidosB2[1]);
+			estructuraRivales.get(equiposElegidosB2[1]).add(e);
+			
 			estructuraRivales.get(e).add(equiposElegidosB3[0]);
+			estructuraRivales.get(equiposElegidosB3[0]).add(e);
+			
 			estructuraRivales.get(e).add(equiposElegidosB3[1]);
+			estructuraRivales.get(equiposElegidosB3[0]).add(e);
+			
 			estructuraRivales.get(e).add(equiposElegidosB4[0]);
+			estructuraRivales.get(equiposElegidosB4[0]).add(e);
+			
 			estructuraRivales.get(e).add(equiposElegidosB4[1]);
+			estructuraRivales.get(equiposElegidosB4[1]).add(e);
 			
 		}
 	}
