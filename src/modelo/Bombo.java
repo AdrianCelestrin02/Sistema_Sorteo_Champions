@@ -27,7 +27,9 @@ public class Bombo {
 
         while (it.hasNext()) {
             Equipo eq = it.next();
-            
+            if (listaAuxiliar.size() < 2) {
+                return new Equipo[0]; 
+            }
             if(eq.getCodigoPais().equals(e.getCodigoPais())) {
             	it.remove();
             }

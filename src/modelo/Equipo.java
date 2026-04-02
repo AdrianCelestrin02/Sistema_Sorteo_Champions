@@ -25,6 +25,21 @@ public class Equipo {
  		return nombre;
  	}
      
+  // 🔥 NECESARIO PARA QUE HashMap FUNCIONE BIEN
+ 	@Override
+ 	public boolean equals(Object obj) {
+ 		if (this == obj) return true;
+ 		if (obj == null || getClass() != obj.getClass()) return false;
+ 		Equipo equipo = (Equipo) obj;
+ 		return nombre.equals(equipo.nombre) && codigoPais.equals(equipo.codigoPais);
+ 	}
+
+ 	@Override
+ 	public int hashCode() {
+ 		return nombre.hashCode() + codigoPais.hashCode();
+ 	}
+ 
+     
 	
 
 }
