@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"Sistema_Sorteo_Champions","l":"app"},{"m":"Sistema_Sorteo_Champions","l":"modelo"}];updateSearchResults();

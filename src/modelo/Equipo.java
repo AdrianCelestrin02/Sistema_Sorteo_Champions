@@ -1,21 +1,37 @@
+/**
+ * @author Adrián Celestrín y Camila Lorenzo
+ */
+
 package modelo;
 
 public class Equipo {
+	//ATRIBUTOS
 	private String nombre;
 	private String codigoPais;
 	
+	/**
+	 * 
+	 * @param nombre
+	 * @param codigoPais
+	 */
 	public Equipo(String nombre, String codigoPais) {
 		super();
 		this.nombre = nombre;
 		this.codigoPais = codigoPais;
 	}
 	
-	
+	/**
+	 * 
+	 * @return nombre del Equipo
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 	
-
+	/**
+	 * 
+	 * @return código del Pís
+	 */
      public String getCodigoPais() {
 		return codigoPais;
 	}
@@ -25,7 +41,6 @@ public class Equipo {
  		return nombre;
  	}
      
-  // 🔥 NECESARIO PARA QUE HashMap FUNCIONE BIEN
  	@Override
  	public boolean equals(Object obj) {
  		if (this == obj) return true;

@@ -1,57 +1,43 @@
+/**
+ * @author Adrián Celestrín y Camila Lorenzo
+ */
 package modelo;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
 
 public class Bombo {
+	//ATROBUTO
 	private ArrayList<Equipo> bombo;
 	
+	/**
+	 * Método Constructor donde instanciamos el atributo bombo
+	 */
 	public Bombo() {
-		this.bombo=new ArrayList<Equipo>();
+		this.bombo = new ArrayList<>();
 	}
 	
+	/**
+	 * 
+	 * @param e
+	 */
 	public void añadirEquipo(Equipo e) {
 		bombo.add(e);
 	}
-	
-	
-	public Equipo[] elegir2Equipos(Equipo e) {
-		Equipo[] equiposElegidos=new Equipo[2];
-		List<Equipo>listaAuxiliar=new ArrayList<Equipo>();
-		listaAuxiliar.addAll(this.bombo);
-		listaAuxiliar.remove(e);
-		
-		Iterator<Equipo> it = listaAuxiliar.iterator();
-
-        while (it.hasNext()) {
-            Equipo eq = it.next();
-            if (listaAuxiliar.size() < 2) {
-                return new Equipo[0]; 
-            }
-            if(eq.getCodigoPais().equals(e.getCodigoPais())) {
-            	it.remove();
-            }
-        }
-		
-		Collections.shuffle(listaAuxiliar);
-		equiposElegidos[0]=listaAuxiliar.get(0);
-		equiposElegidos[1]=listaAuxiliar.get(1);
-		
-		
-		return equiposElegidos;
-	}
-
+    
+	/**
+	 * 
+	 * @return el bombo
+	 */
 	public ArrayList<Equipo> getBombo() {
 		return bombo;
 	}
 	
-	public boolean verifcarEquipoenBombo(Equipo e) {//no sabemos como funciona
-		if(bombo.contains(e)) {
-			return true;
-		}
-		return false;
+	/**
+	 * 
+	 * @param e
+	 * @return booleano
+	 */
+	public boolean verifcarEquipoenBombo(Equipo e) {
+		return bombo.contains(e);
 	}
-
 }
